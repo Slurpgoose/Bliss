@@ -1,14 +1,13 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
+body {margin: 0 !important; padding: 0 !important;}
+
+.App {
+  margin: 0 !important; padding: 0;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 2vh;
+  background-color:  #161c1a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +16,100 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.App-header .nav-bar {
+  width: 100%;
+  height: 100% !important;
+  background: #161c1a;
+  border-radius: 3px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100% !important;
+  margin: 0 !important; 
+  padding: 0 !important;
+}
+
+.topLink {
+  text-align: center;
+  width: 33.33%;
+  color: #ebf8fa;
+  background: #161c1a;
+  cursor: pointer;
+  border: 3px solid transparent;
+  text-decoration: none !important;
+}
+
+ul .topLink.active {
+  border: 3px solid #4fb501;
+  border-top: transparent;
+}
+
+.App-footer {
+  background-color: #0b2428;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main-content {
+  height: 95vh;
+  background: rgb(235,248,250);
+background: linear-gradient(109deg, rgba(235,248,250,1) 23%, #e1f4f7 60%);
+}
+
+
+.home-content {
+  height: 100%;
+  margin-left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-content:  center !important;
+  align-items: center;
+}
+
+.title-container {
+  margin-bottom: 10%;
+}
+.title-container h1, .title-container p {
+  text-align: center;
+  letter-spacing: 4px;
+  color: #0b2428;
+}
+.topLink:hover {
+  color: white;
+}
+
+.primary-btn {
+  padding: 3%;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px solid #0b2428;
+  background: #161c1a;;
+  color: white;
+  font-size: 2em;
+  margin-top: 3%;
+  letter-spacing: 4px;
+  font-weight: 200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  transform: scale(1.03);
+  border: 3px solid #4fb501;
+  background-color: #161c1a;
+  box-shadow: 0px 10px 25px 2px rgba(0,0,0, 0.4);
+  transition: all .6s;
 }
